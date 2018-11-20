@@ -12,7 +12,8 @@
 		84FC1F2D21A2FE9800E9AB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1F2B21A2FE9800E9AB3A /* Main.storyboard */; };
 		84FC1F2F21A2FE9900E9AB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1F2E21A2FE9900E9AB3A /* Assets.xcassets */; };
 		84FC1F3221A2FE9900E9AB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1F3021A2FE9900E9AB3A /* LaunchScreen.storyboard */; };
-		84FC1F3A21A324A100E9AB3A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC1F3921A324A100E9AB3A /* Item.swift */; };
+		84FC1F6221A37A5B00E9AB3A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FC1F6021A37A5B00E9AB3A /* DataModel.xcdatamodeld */; };
+		84FC1F6421A3B02B00E9AB3A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC1F6321A3B02B00E9AB3A /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		84FC1F2E21A2FE9900E9AB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FC1F3121A2FE9900E9AB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FC1F3321A2FE9900E9AB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84FC1F3921A324A100E9AB3A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		84FC1F6121A37A5B00E9AB3A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		84FC1F6321A3B02B00E9AB3A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		84FC1F2621A2FE9800E9AB3A /* Todoe */ = {
 			isa = PBXGroup;
 			children = (
+				84FC1F2721A2FE9800E9AB3A /* AppDelegate.swift */,
 				84FC1F3E21A3251200E9AB3A /* Supporting Files */,
 				84FC1F3D21A324E400E9AB3A /* Views */,
 				84FC1F3C21A324CF00E9AB3A /* Controllers */,
@@ -68,7 +71,7 @@
 		84FC1F3B21A324B400E9AB3A /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				84FC1F3921A324A100E9AB3A /* Item.swift */,
+				84FC1F6021A37A5B00E9AB3A /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -76,7 +79,7 @@
 		84FC1F3C21A324CF00E9AB3A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84FC1F2721A2FE9800E9AB3A /* AppDelegate.swift */,
+				84FC1F6321A3B02B00E9AB3A /* CategoryViewController.swift */,
 				84FC1F2921A2FE9800E9AB3A /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -170,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FC1F6421A3B02B00E9AB3A /* CategoryViewController.swift in Sources */,
 				84FC1F2A21A2FE9800E9AB3A /* TodoListViewController.swift in Sources */,
-				84FC1F3A21A324A100E9AB3A /* Item.swift in Sources */,
+				84FC1F6221A37A5B00E9AB3A /* DataModel.xcdatamodeld in Sources */,
 				84FC1F2821A2FE9800E9AB3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84FC1F6021A37A5B00E9AB3A /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84FC1F6121A37A5B00E9AB3A /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 84FC1F6121A37A5B00E9AB3A /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84FC1F1C21A2FE9800E9AB3A /* Project object */;
 }
