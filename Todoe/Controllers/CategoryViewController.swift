@@ -33,8 +33,10 @@ class CategoryViewController: SwipeTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
-        cell.textLabel?.text = categories?[indexPath.row].name ?? "No Categories added yet"
-        cell.backgroundColor = UIColor.randomFlat
+        if let category = categories?[indexPath.row] {
+            cell.textLabel?.text = category.name ?? "No Categories added yet"
+            cell.backgroundColor = UIColor(hexString: category.colour ?? "79C1FC")
+        }
         return cell
     }
     
@@ -93,6 +95,7 @@ class CategoryViewController: SwipeTableViewController {
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             let newCategory = Category()
             newCategory.name = textField.text!
+            newCategory.colour = UIColor.randomFlat.hexValue()
             self.save(category: newCategory)
         }
         alert.addAction(action)
